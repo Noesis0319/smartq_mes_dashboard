@@ -1,0 +1,81 @@
+name: smartq_mes_dashboard
+description: "Smartq mes dashboard"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  easy_localization: ^3.0.7
+
+  # 반응형
+  flutter_screenutil: ^5.9.3
+
+  #  메시지 번역, 복수형 및 성별, 날짜/숫자 형식 지정 및 구문 분석, 양방향 텍스트를 포함한 국제화 및 현지화 기능을 제공
+  intl: any
+
+  # 전용 라이브러리(html : web 전용)사용시 다른 플랫폼에서 빌드못하게 되는 문제 해결
+  universal_html: ^2.2.4
+
+  # 네트워크 연결 체크
+  connectivity_plus: ^6.0.3
+
+  # Shared Preference
+  shared_preferences: ^2.2.2
+
+  #   직렬화/역직렬화
+  #   flutter pub run build_runner build
+  #   dart run build_runner build
+  # part '../modle.g.dart';
+  #  @JsonSerializable(includeIfNull: false)
+  #  factory 모델.fromJson(Map<String, dynamic> json)
+  #  => _$모델FromJson(json);
+  #  Map<String, dynamic> toJson() => _$모델ToJson(this);
+  json_annotation: ^4.9.0
+  json_serializable: ^6.7.1
+  build_runner: ^2.4.9
+
+  flutter_local_notifications: ^17.1.1
+
+  #video
+  video_player: ^2.9.1
+  video_player_web: ^2.3.1
+
+  #  svg 변환
+  flutter_svg: ^2.0.10+1
+
+  # http
+  http: ^1.2.1
+
+  # 깔끔한 로그/색상/커스텀 가능
+  # final talker = Talker();
+  # talker.info('msg');
+  # talker.warning('msg');
+  # talker.debug('msg');
+  # talker.handle(error, stacktrace);
+  talker: ^4.2.0
+
+  # Provider
+  provider: ^6.1.2
+
+  fl_chart: ^0.68.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+    - assets/image/
+    - assets/translations/
+    - assets/video/

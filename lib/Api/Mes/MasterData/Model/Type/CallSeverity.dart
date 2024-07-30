@@ -1,0 +1,6 @@
+enum CallSeverity{
+  High,
+  Low,
+  ;
+
+}
