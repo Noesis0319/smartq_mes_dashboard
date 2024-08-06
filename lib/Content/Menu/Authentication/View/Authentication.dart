@@ -19,6 +19,7 @@ part 'CompanyAuth.dart';
 part 'EmployeeAuth.dart';
 
 class Authentication extends BaseState<AuthenticationCreator> with AuthenticationViewManager {
+
   @override
   Widget build(BuildContext context) {
     initLocalizationValue = EasyLocalization.of(context)!.locale;
@@ -94,6 +95,7 @@ class Authentication extends BaseState<AuthenticationCreator> with Authenticatio
               ],
             );
           } else {
+
             return Center(
               child: CircularProgressIndicator(
                 color: CustomColor.Primary.getColor(),
